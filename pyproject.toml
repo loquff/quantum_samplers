@@ -3,7 +3,7 @@ name = "quantum_samplers"
 version = "0.1.0"
 description = ""
 authors = ["marcsgil <marcosgildeoliveira@gmail.com>"]
-readme = "README.md"
+readme = "docs/README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
