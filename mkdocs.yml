@@ -67,6 +67,6 @@ markdown_extensions:
 
         
 nav:
-  - index.md
+  - README.md
   - reference.md
 
