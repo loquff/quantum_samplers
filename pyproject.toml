@@ -7,16 +7,19 @@ readme = "docs/README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-numpy = "^1.25.2"
+numpy = "^1.22"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^6.0.0"
+[tool.poetry.group.development]
+optional = true
+
+[tool.poetry.group.development.dependencies]
+pytest = "^7.4.3"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
 mkdocs = "^1.5.3"
-mkdocstrings = "^0.24.0"
-mkdocs-material = "^9.4.12"
-mkdocstrings-python = "^1.7.5"
+mkdocs-material = "^9.5.2"
 python-markdown-math = "^0.8"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+mkdocstrings = {extras = ["crystal", "python"], version = "^0.24.0"}
